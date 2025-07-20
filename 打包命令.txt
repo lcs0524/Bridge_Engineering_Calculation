@@ -1,0 +1,3 @@
+rd /s /q build
+rd /s /q dist
+pyinstaller 桥梁跨越工程安全性评估软件.spec

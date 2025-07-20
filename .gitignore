@@ -1,0 +1,7 @@
+# 忽略编译产物和大文件 
+*.rar 
+*.exe 
+*.pkg 
+土力学_*.pdf 
+build/ 
+dist/ 

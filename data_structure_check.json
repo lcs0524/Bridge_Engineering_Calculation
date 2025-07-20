@@ -1,0 +1,800 @@
+{
+  "input_parameters": {
+    "pile1": {
+      "diameter": 1.2,
+      "length": 30.0,
+      "load": 8000.0
+    },
+    "pile2": {
+      "diameter": 1.0,
+      "length": 25.0,
+      "load": 6000.0
+    },
+    "road_level": "高速公路",
+    "road_params": {
+      "width": 12.0,
+      "pile1_distance": 5.0,
+      "pile2_distance": 5.0
+    },
+    "soil_layers": [
+      {
+        "depth_range": "0-5",
+        "name": "粉质粘土",
+        "compression_modulus": 8.5,
+        "poisson_ratio": 0.35
+      },
+      {
+        "depth_range": "5-10",
+        "name": "砂土",
+        "compression_modulus": 15.0,
+        "poisson_ratio": 0.3
+      }
+    ]
+  },
+  "equivalent_soil": {
+    "E": 11.75,
+    "nu": 0.325,
+    "total_thickness": 10.0
+  },
+  "points": [
+    {
+      "point_id": "W1",
+      "x": -6.0,
+      "y": 0,
+      "z": 2,
+      "pile1_distance": 1.0,
+      "pile2_distance": 11.0,
+      "pile1_settlement": 0.1684577912143723,
+      "pile2_settlement": 0.003505782282437873,
+      "total_settlement": 0.16805531046279173,
+      "settlement_mm": 168.05531046279174,
+      "influence_factor": 0.0016561176603419139,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 546.7648254163946,
+      "tau_xz": -274.03837306821055,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 1.0,
+          "distance_factor": 1.0,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 1.0309578884000001
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 1.0,
+          "distance_factor": 0.2,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 0.21196994500000005
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 8.5,
+        "poisson_ratio": 0.35,
+        "name": "粉质粘土"
+      }
+    },
+    {
+      "point_id": "W2",
+      "x": -2.0,
+      "y": 0,
+      "z": 2,
+      "pile1_distance": 3.0,
+      "pile2_distance": 7.0,
+      "pile1_settlement": 0.06198545159434767,
+      "pile2_settlement": 0.005559675544350782,
+      "total_settlement": 0.06601001061281894,
+      "settlement_mm": 66.01001061281895,
+      "influence_factor": 0.024014626383198238,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 51.269790319419556,
+      "tau_xz": 71.30113931622671,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 1.0,
+          "distance_factor": 0.775,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 0.7989923635100001
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 1.0,
+          "distance_factor": 0.2,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 0.21196994500000005
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 8.5,
+        "poisson_ratio": 0.35,
+        "name": "粉质粘土"
+      }
+    },
+    {
+      "point_id": "W3",
+      "x": 2.0,
+      "y": 0,
+      "z": 2,
+      "pile1_distance": 7.0,
+      "pile2_distance": 3.0,
+      "pile1_settlement": 0.006777983839395202,
+      "pile2_settlement": 0.045923504830950895,
+      "total_settlement": 0.051503727564201865,
+      "settlement_mm": 51.50372756420187,
+      "influence_factor": 0.024014626383198238,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 39.10608979190331,
+      "tau_xz": -51.1877398039848,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 1.0,
+          "distance_factor": 0.2,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 0.20619157768000004
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 1.0,
+          "distance_factor": 0.7,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 0.7418948075000001
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 8.5,
+        "poisson_ratio": 0.35,
+        "name": "粉质粘土"
+      }
+    },
+    {
+      "point_id": "W4",
+      "x": 6.0,
+      "y": 0,
+      "z": 2,
+      "pile1_distance": 11.0,
+      "pile2_distance": 1.0,
+      "pile1_settlement": 0.004274014817096074,
+      "pile2_settlement": 0.138178355726718,
+      "total_settlement": 0.1392148166678183,
+      "settlement_mm": 139.2148166678183,
+      "influence_factor": 0.0016561176603419139,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 410.1501477709641,
+      "tau_xz": 205.9496876988331,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 1.0,
+          "distance_factor": 0.2,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 0.20619157768000004
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 1.0,
+          "distance_factor": 1.0,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 1.0598497250000003
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 8.5,
+        "poisson_ratio": 0.35,
+        "name": "粉质粘土"
+      }
+    },
+    {
+      "point_id": "W5",
+      "x": -6.0,
+      "y": 0,
+      "z": 5,
+      "pile1_distance": 1.0,
+      "pile2_distance": 11.0,
+      "pile1_settlement": 0.0769043413075919,
+      "pile2_settlement": 0.0034038022589222183,
+      "total_settlement": 0.07848295848545697,
+      "settlement_mm": 78.48295848545698,
+      "influence_factor": 0.002739605694923266,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 139.90891379311836,
+      "tau_xz": -30.762459510657937,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.9666666666666667,
+          "distance_factor": 1.0,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 0.9965926254533334
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.95,
+          "distance_factor": 0.2,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 0.20137144775000004
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 8.5,
+        "poisson_ratio": 0.35,
+        "name": "粉质粘土"
+      }
+    },
+    {
+      "point_id": "W6",
+      "x": -2.0,
+      "y": 0,
+      "z": 5,
+      "pile1_distance": 3.0,
+      "pile2_distance": 7.0,
+      "pile1_settlement": 0.04690541405446401,
+      "pile2_settlement": 0.005322484054860506,
+      "total_settlement": 0.051040900425021685,
+      "settlement_mm": 51.04090042502168,
+      "influence_factor": 0.009826696277523464,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 78.43630044907809,
+      "tau_xz": 31.857938326463113,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.9666666666666667,
+          "distance_factor": 0.775,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 0.7723592847263334
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.95,
+          "distance_factor": 0.2,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 0.20137144775000004
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 8.5,
+        "poisson_ratio": 0.35,
+        "name": "粉质粘土"
+      }
+    },
+    {
+      "point_id": "W7",
+      "x": 2.0,
+      "y": 0,
+      "z": 5,
+      "pile1_distance": 7.0,
+      "pile2_distance": 3.0,
+      "pile1_settlement": 0.006602654745836341,
+      "pile2_settlement": 0.03415191745103648,
+      "total_settlement": 0.039828331919671174,
+      "settlement_mm": 39.82833191967117,
+      "influence_factor": 0.009826696277523464,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 63.26167923684549,
+      "tau_xz": -17.685218284795646,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.9666666666666667,
+          "distance_factor": 0.2,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 0.1993185250906667
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.95,
+          "distance_factor": 0.7,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 0.7048000671250001
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 8.5,
+        "poisson_ratio": 0.35,
+        "name": "粉质粘土"
+      }
+    },
+    {
+      "point_id": "W8",
+      "x": 6.0,
+      "y": 0,
+      "z": 5,
+      "pile1_distance": 11.0,
+      "pile2_distance": 1.0,
+      "pile1_settlement": 0.004222489143624171,
+      "pile2_settlement": 0.061993568665289954,
+      "total_settlement": 0.06471114740416607,
+      "settlement_mm": 64.71114740416607,
+      "influence_factor": 0.002739605694923266,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 105.74271606418209,
+      "tau_xz": 24.85611221554877,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.9666666666666667,
+          "distance_factor": 0.2,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 0.1993185250906667
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.95,
+          "distance_factor": 1.0,
+          "soil_factor": 1.1,
+          "comprehensive_factor": 1.00685723875
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 8.5,
+        "poisson_ratio": 0.35,
+        "name": "粉质粘土"
+      }
+    },
+    {
+      "point_id": "W9",
+      "x": -6.0,
+      "y": 0,
+      "z": 10,
+      "pile1_distance": 1.0,
+      "pile2_distance": 11.0,
+      "pile1_settlement": 0.014954475516390255,
+      "pile2_settlement": 0.0012369399870102275,
+      "total_settlement": 0.015823428787414107,
+      "settlement_mm": 15.823428787414107,
+      "influence_factor": 0.0018639700826721015,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 41.204310670711536,
+      "tau_xz": -8.066021051844372,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.8833333333333333,
+          "distance_factor": 1.0,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.6623123404266666
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.85,
+          "distance_factor": 0.2,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.13103596600000003
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 15.0,
+        "poisson_ratio": 0.3,
+        "name": "砂土"
+      }
+    },
+    {
+      "point_id": "W10",
+      "x": -2.0,
+      "y": 0,
+      "z": 10,
+      "pile1_distance": 3.0,
+      "pile2_distance": 7.0,
+      "pile1_settlement": 0.010817110913486869,
+      "pile2_settlement": 0.0016842467603278163,
+      "total_settlement": 0.012217235908500716,
+      "settlement_mm": 12.217235908500715,
+      "influence_factor": 0.002972094815032916,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 41.365195872703886,
+      "tau_xz": 1.838293618768522,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.8833333333333333,
+          "distance_factor": 0.775,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.5132920638306667
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.85,
+          "distance_factor": 0.2,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.13103596600000003
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 15.0,
+        "poisson_ratio": 0.3,
+        "name": "砂土"
+      }
+    },
+    {
+      "point_id": "W11",
+      "x": 2.0,
+      "y": 0,
+      "z": 10,
+      "pile1_distance": 7.0,
+      "pile2_distance": 3.0,
+      "pile1_settlement": 0.0021338431631148943,
+      "pile2_settlement": 0.0077117127649331705,
+      "total_settlement": 0.0096217932933197,
+      "settlement_mm": 9.6217932933197,
+      "influence_factor": 0.002972094815032916,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 37.190468237969455,
+      "tau_xz": 2.9378797193326864,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.8833333333333333,
+          "distance_factor": 0.2,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.13246246808533332
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.85,
+          "distance_factor": 0.7,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.45862588100000007
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 15.0,
+        "poisson_ratio": 0.3,
+        "name": "砂土"
+      }
+    },
+    {
+      "point_id": "W12",
+      "x": 6.0,
+      "y": 0,
+      "z": 10,
+      "pile1_distance": 11.0,
+      "pile2_distance": 1.0,
+      "pile1_settlement": 0.0015671313709111545,
+      "pile2_settlement": 0.011803598022693929,
+      "total_settlement": 0.01306684918011406,
+      "settlement_mm": 13.06684918011406,
+      "influence_factor": 0.0018639700826721015,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 33.20482716081803,
+      "tau_xz": 8.581269362446093,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.8833333333333333,
+          "distance_factor": 0.2,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.13246246808533332
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.85,
+          "distance_factor": 1.0,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.6551798300000001
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 15.0,
+        "poisson_ratio": 0.3,
+        "name": "砂土"
+      }
+    },
+    {
+      "point_id": "W13",
+      "x": -6.0,
+      "y": 0,
+      "z": 15,
+      "pile1_distance": 1.0,
+      "pile2_distance": 11.0,
+      "pile1_settlement": 0.009074797473267537,
+      "pile2_settlement": 0.0009525308089047279,
+      "total_settlement": 0.00979943445757744,
+      "settlement_mm": 9.79943445757744,
+      "influence_factor": 0.0010918551419470519,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 21.131220078405576,
+      "tau_xz": -4.30332367853699,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.7999999999999999,
+          "distance_factor": 1.0,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.59983004416
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.7400000000000001,
+          "distance_factor": 0.2,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.11407837040000002
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 15.0,
+        "poisson_ratio": 0.3,
+        "name": "砂土"
+      }
+    },
+    {
+      "point_id": "W14",
+      "x": -2.0,
+      "y": 0,
+      "z": 15,
+      "pile1_distance": 3.0,
+      "pile2_distance": 7.0,
+      "pile1_settlement": 0.006813498202946681,
+      "pile2_settlement": 0.0011595997134221604,
+      "total_settlement": 0.007791891145542276,
+      "settlement_mm": 7.791891145542276,
+      "influence_factor": 0.001371763162489812,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 23.1711393099629,
+      "tau_xz": -0.5525631285677863,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.7999999999999999,
+          "distance_factor": 0.775,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.46486828422399995
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.7400000000000001,
+          "distance_factor": 0.2,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.11407837040000002
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 15.0,
+        "poisson_ratio": 0.3,
+        "name": "砂土"
+      }
+    },
+    {
+      "point_id": "W15",
+      "x": 2.0,
+      "y": 0,
+      "z": 15,
+      "pile1_distance": 7.0,
+      "pile2_distance": 3.0,
+      "pile1_settlement": 0.0015283310913328664,
+      "pile2_settlement": 0.004669357589098982,
+      "total_settlement": 0.006056832119512943,
+      "settlement_mm": 6.056832119512943,
+      "influence_factor": 0.001371763162489812,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 21.916796599212496,
+      "tau_xz": 2.5323620009046555,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.7999999999999999,
+          "distance_factor": 0.2,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.119966008832
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.7400000000000001,
+          "distance_factor": 0.7,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.39927429640000006
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 15.0,
+        "poisson_ratio": 0.3,
+        "name": "砂土"
+      }
+    },
+    {
+      "point_id": "W16",
+      "x": 6.0,
+      "y": 0,
+      "z": 15,
+      "pile1_distance": 11.0,
+      "pile2_distance": 1.0,
+      "pile1_settlement": 0.0012554180842329625,
+      "pile2_settlement": 0.0068853749092992,
+      "total_settlement": 0.007955774970951885,
+      "settlement_mm": 7.955774970951885,
+      "influence_factor": 0.0010918551419470519,
+      "interaction_factor": 0.9772727272727273,
+      "sigma_z": 18.38116877295039,
+      "tau_xz": 5.084845482609961,
+      "tau_yz": 0.0,
+      "correction_factors": {
+        "pile1": {
+          "length_correction": 0.9697,
+          "diameter_correction": 0.96652,
+          "basic_combined": 0.937234444,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.7999999999999999,
+          "distance_factor": 0.2,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.119966008832
+        },
+        "pile2": {
+          "length_correction": 0.97225,
+          "diameter_correction": 0.9910000000000001,
+          "basic_combined": 0.9634997500000001,
+          "road_level_factor": 1.0,
+          "depth_factor": 0.7400000000000001,
+          "distance_factor": 1.0,
+          "soil_factor": 0.8,
+          "comprehensive_factor": 0.5703918520000001
+        }
+      },
+      "soil_properties": {
+        "compression_modulus": 15.0,
+        "poisson_ratio": 0.3,
+        "name": "砂土"
+      }
+    }
+  ],
+  "statistics": {
+    "max_settlement": 0.16805531046279173,
+    "min_settlement": 0.006056832119512943,
+    "avg_settlement": 0.04632377771280499,
+    "max_settlement_mm": 168.05531046279174,
+    "min_settlement_mm": 6.056832119512943,
+    "avg_settlement_mm": 46.32377771280499
+  },
+  "safety_assessment": {
+    "safety_level": "危险",
+    "safety_color": "red",
+    "max_settlement_mm": 168.05531046279174,
+    "general_limit": 200,
+    "bridge_limit": 150,
+    "approach_limit": 80,
+    "exceed_general": false,
+    "exceed_bridge": true,
+    "exceed_approach": true,
+    "recommendations": [
+      "沉降值超出桥梁工程限值，需要重新设计",
+      "建议优化桩基设计参数或采用加固措施",
+      "考虑预应力管桩或采用桩筏基础",
+      "建议进行桩基承载力验算和变形验算",
+      "考虑采用PHC预应力管桩或钢管桩",
+      "评估地基处理方案的必要性"
+    ],
+    "technical_recommendations": [
+      "设置桥头搭板减少车辆颠簸",
+      "采用轻质填料减小附加荷载",
+      "分层分期施工控制沉降速率"
+    ],
+    "influence_area": 113.09733552923255,
+    "influence_points_count": 16,
+    "warning_points_count": 2,
+    "danger_points_count": 1,
+    "safety_statistics": {
+      "safe_points": 0,
+      "influence_points": 14,
+      "warning_points": 1,
+      "danger_points": 1
+    },
+    "compliance_analysis": {
+      "meets_general_standard": true,
+      "meets_bridge_standard": false,
+      "meets_approach_standard": false,
+      "overall_compliance": false
+    }
+  },
+  "calculation_info": {
+    "method": "Boussinesq理论 + 双桩叠加分析",
+    "standard": "JTG D30-2015",
+    "correction_applied": true,
+    "flac3d_calibrated": true,
+    "pile_interaction": true
+  }
+}
