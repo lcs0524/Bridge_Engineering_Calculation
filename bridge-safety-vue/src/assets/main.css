@@ -1,10 +1,54 @@
-@import './base.css';
+/* 
+  全新UI设计方案: "志安·清朗"
+  核心思想: 严格遵循Logo的红、蓝、白三色体系，打造明亮、专业、清晰的界面。
+*/
+
+:root {
+  /* 品牌色 */
+  --brand-primary: #1d4ed8;  /* Logo 蓝色 */
+  --brand-accent: #e11d48;   /* Logo 红色 */
+  --brand-white: #ffffff;   /* 纯白 */
+
+  /* 背景色 */
+  --bg-main: #f9fafb; /* 极浅的灰色，比纯白更柔和 */
+  --bg-sidebar: var(--brand-white);
+  --bg-card: var(--brand-white);
+  --bg-section: #f9fafb; /* 卡片内部分区背景 */
+  --bg-input: var(--brand-white);
+  --bg-hover: #f0f9eb; /* 下拉菜单项悬停背景 */
+
+  /* 文字色 */
+  --text-primary: #111827; /* 深灰色正文 */
+  --text-secondary: #6b7280; /* 次要文字 */
+  --text-on-primary: var(--brand-white); /* 在品牌色背景上的文字 */
+  --text-numeric: #0ea5e9; /* 数值高亮，使用清新蓝色 */
+
+  /* 边框与阴影 */
+  --el-border-color: #e5e7eb;
+  --el-border-color-light: #f3f4f6;
+  --el-box-shadow-light: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+  /* Element Plus 覆盖 */
+  --el-color-primary: var(--brand-primary);
+  --el-color-danger: var(--brand-accent);
+  --el-bg-color: var(--bg-main);
+  --el-fill-color-blank: var(--bg-main);
+  --el-text-color-primary: var(--text-primary);
+  --el-text-color-regular: var(--text-secondary);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+  height: 100vh;
+  width: 100vw;
+  display: block;
 }
 
 a,
@@ -21,15 +65,70 @@ a,
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+/* Element Plus 全局组件样式覆盖 */
+/* ========================================================================== */
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+/* 下拉选择器修复：确保下拉列表项的文字颜色和 hover 效果正确 */
+.el-select-dropdown__item {
+  color: var(--text-primary) !important;
+}
+
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  background-color: var(--bg-hover) !important;
+  color: var(--brand-primary) !important;
+}
+
+/* 确保 Select 组件选中后的输入框内文字颜色正确 */
+.el-select .el-input__inner {
+    color: var(--text-primary) !important;
+}
+
+/*
+  【终极修复】 全面修正输入、选择类组件的文字颜色
+  问题：Element Plus 的部分组件（如 el-select）在选中值后，显示的文本（通常在 a <span> 中）
+         继承了错误的颜色（如白色），导致在亮色背景下不可见。
+  方案：使用高优先级的 !important 规则，强制覆盖所有相关组件的文字颜色，确保其始终为
+         我们主题中定义的 --text-primary 深色。
+*/
+.el-select__selected-item,
+.el-input__inner,
+.el-textarea__inner,
+.el-cascader__label,
+.el-radio__label,
+.el-checkbox__label,
+.el-date-editor .el-input__inner {
+  color: var(--text-primary) !important;
+}
+
+/*
+  【针对性修复】el-select 选中项文字颜色
+  问题：根据用户提供的精准 HTML 定位，el-select 选中后，包裹文字的 <span> 标签颜色未被正确覆盖。
+  方案：使用最直接、最高优先级的选择器，强制设定该 <span> 的颜色，确保其在任何情况下都显示为深色。
+*/
+.el-select .el-select__selection span {
+  color: var(--text-primary) !important;
+}
+
+/*
+  【第三次修复 & 根本性修复】el-select 下拉选项文字颜色
+  问题：下拉框展开后，所有选项文字仍为白色。之前的修复未生效。
+  分析：问题根源可能是父容器 `el-select-dropdown` 强制设定了白色文字，导致子项的颜色修复被覆盖。
+  方案：本次采用“围堵”策略。
+        1. 直接将整个下拉框容器（.el-select-dropdown）的文字颜色强制设为深色。
+        2. 再次为每一个选项（.el-select-dropdown__item）及其悬浮状态设置深色。
+        这确保了从父到子都有正确的颜色定义，彻底杜绝白色文字的出现。
+*/
+.el-select-dropdown {
+    color: var(--text-primary) !important;
+}
+
+.el-select-dropdown__item {
+  color: var(--text-primary) !important;
+}
+
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  color: var(--text-primary) !important;
+  background-color: #eef5ff !important; /* 使用一个明确的浅蓝色作为悬浮背景色，增加对比度 */
 }

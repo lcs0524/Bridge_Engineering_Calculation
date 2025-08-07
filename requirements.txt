@@ -7,3 +7,6 @@ Pillow==8.4.0
 cx_Freeze==6.8.4
 lief==0.11.5
 importlib_metadata==4.13.0
+Flask==2.0.3
+pywebview[pyqt5]==3.7.1
+waitress==2.1.2

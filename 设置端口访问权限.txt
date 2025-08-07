@@ -1,0 +1,1 @@
+netsh advfirewall firewall add rule name="Allow Local Web Server Port 8888" dir=in action=allow protocol=TCP localport=8888

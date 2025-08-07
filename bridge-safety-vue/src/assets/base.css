@@ -18,7 +18,23 @@
   --vt-c-text-light-1: var(--vt-c-indigo);
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.84); /* Improved text opacity for better visibility */
+  
+  /* New color variables for improved contrast */
+  --vt-c-text-numeric: rgba(255, 255, 255, 0.95); /* High contrast for numerical values */
+  --vt-c-text-warning: #fbbf24; /* Amber color for warnings, easier on eyes than red */
+  --vt-c-text-danger: #f87171; /* Red but slightly muted */
+  --vt-c-text-success: #4ade80; /* Green with better visibility */
+  
+  /* Module specific colors */
+  --bridge-primary: #8b5cf6; /* Purple for bridge module */
+  --foundation-primary: #10b981; /* Green for foundation module */
+  --roadbed-primary: #3b82f6; /* Blue for roadbed module */
+  
+  /* Background colors with better opacity for text contrast */
+  --bg-card: rgba(17, 24, 39, 0.85);
+  --bg-section: rgba(31, 41, 55, 0.7);
+  --bg-input: rgba(31, 41, 55, 0.9);
 }
 
 /* semantic color variables for this project */
@@ -60,6 +76,9 @@
 
 body {
   min-height: 100vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   color: var(--color-text);
   background: var(--color-background);
   transition:
@@ -83,4 +102,44 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* 全局下拉框样式修复 - 确保所有模块中选项文本颜色一致 */
+.el-select-dropdown__item {
+  color: var(--vt-c-text-numeric) !important;
+}
+
+.el-select-dropdown__item.selected,
+.el-select-dropdown .el-select-dropdown__item.is-selected {
+  color: var(--vt-c-text-numeric) !important;
+  font-weight: 600 !important;
+}
+
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  color: var(--vt-c-text-numeric) !important;
+}
+
+/* 桥梁沉降模块特定样式 */
+.settlement-form .el-select-dropdown__item.selected,
+.settlement-form .el-select-dropdown__item.is-selected {
+  background-color: rgba(139, 92, 246, 0.3) !important;
+}
+
+/* 路基预留模块特定样式 */
+.calculation-form .el-select-dropdown__item.selected,
+.calculation-form .el-select-dropdown__item.is-selected {
+  background-color: rgba(59, 130, 246, 0.3) !important;
+}
+
+/* 塔基稳定性模块特定样式 */
+.stability-form .el-select-dropdown__item.selected,
+.stability-form .el-select-dropdown__item.is-selected {
+  background-color: rgba(16, 185, 129, 0.3) !important;
+}
+
+/* 确保下拉框中默认显示的选中值 */
+.el-select .el-select__inner-wrapper .el-input__inner,
+.el-select-dropdown__item {
+  color: var(--vt-c-text-numeric) !important;
 }

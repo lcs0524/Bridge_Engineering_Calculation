@@ -69,7 +69,7 @@ class MultiModuleWindow:
         
         # 创建主框架
         main_frame = ttk.Frame(self.root)
-        main_frame.pack(fill="both", expand=True, padx=10, pady=5)
+        main_frame.pack(fill="both", expand=True, pady=5)
         
         # 创建模块选择标签页
         self.create_module_tabs(main_frame)
@@ -1093,7 +1093,7 @@ class MultiModuleWindow:
     def create_status_bar(self):
         """创建状态栏"""
         status_frame = ttk.Frame(self.root)
-        status_frame.pack(side="bottom", fill="x", padx=10, pady=5)
+        status_frame.pack(side="bottom", fill="x", pady=5)
         
         self.status_label = ttk.Label(status_frame, text="准备就绪")
         self.status_label.pack(side="left", padx=10)
